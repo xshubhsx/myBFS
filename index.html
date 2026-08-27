@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>बागवान फ्रूट सप्लायर्स — बिलिंग</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/bill.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="bill">
+<div class="app-shell">
+
+  <nav class="top-nav">
+    <a href="index.html" data-page="bill">🧾 नवीन बिल</a>
+    <a href="history.html" data-page="history">📜 Bill History</a>
+    <a href="analytics.html" data-page="analytics">📊 Analytics</a>
+  </nav>
+
+  <p class="online-status" id="onlineStatus"></p>
+
+  <div class="bill-paper" id="billPaper">
+
+    <!-- HEADER -->
+    <div class="bill-header">
+      <div class="contact-block">
+        <span class="contact-name">आपताप बागवान</span>
+        <span class="phone">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.5.6 3.6.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>
+          9022237316
+        </span>
+        <span class="phone">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.5.6 3.6.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>
+          9325170397
+        </span>
+      </div>
+
+      <div class="brand-title">
+        <div class="name-main">बागवान</div>
+        <div class="name-sub">फ्रूट सप्लायर्स</div>
+        <div class="fruit-strip" aria-hidden="true">🍇🍎🍊🍉</div>
+      </div>
+
+      <div class="contact-block right">
+        <span class="contact-name">सोयल बागवान</span>
+        <span class="phone">
+          9307433732
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.5.6 3.6.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>
+        </span>
+        <span class="phone">
+          9011383439
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.5.6 3.6.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>
+        </span>
+        <div class="location-block">
+          <span>माळंगी, ता. कर्जत<br />जि. अहिल्यानगर</span>
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <hr class="header-divider" />
+
+    <!-- DATE -->
+    <div class="date-row">
+      <div class="date-box">
+        <span>दिनांक :</span>
+        <input type="text" maxlength="2" id="dateDD" placeholder="DD" />/
+        <input type="text" maxlength="2" id="dateMM" placeholder="MM" />/
+        <input type="text" maxlength="4" id="dateYYYY" placeholder="YYYY" />
+      </div>
+    </div>
+
+    <!-- CUSTOMER DETAILS -->
+    <div class="customer-box">
+      <div class="field-line">
+        <label>शेतकऱ्याचे नाव :</label>
+        <input type="text" id="farmerName" autocomplete="off" />
+      </div>
+      <div class="field-line">
+        <label>मोबाईल नं. :</label>
+        <input type="tel" id="mobileNumber" maxlength="10" autocomplete="off" />
+      </div>
+      <div class="field-line">
+        <label>गाव :</label>
+        <input type="text" id="village" autocomplete="off" />
+      </div>
+      <div class="field-line">
+        <label>लेबर दर (₹/) :</label>
+        <input type="number" id="labourRate" min="0" step="1" placeholder="उदा. 500" />
+      </div>
+
+      <div class="customer-suggestion" id="customerSuggestion"></div>
+    </div>
+
+    <!-- ITEMS TABLE -->
+    <div class="table-wrap">
+      <table class="bill-table">
+        <thead>
+          <tr>
+            <th>मालाचा प्रकार</th>
+            <th>वजन (KG)</th>
+            <th>कडता (KG)</th>
+            <th>एकूण वजन</th>
+            <th>लेबर चार्ज</th>
+            <th>भाव (₹)</th>
+            <th>एकूण रक्कम</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="itemsBody"></tbody>
+      </table>
+    </div>
+    <p class="kadta-warning" id="kadtaWarning">⚠ कडता वजनापेक्षा जास्त असू शकत नाही — कृपया तपासा.</p>
+
+    <div class="add-item-row">
+      <button type="button" class="btn-add-item" id="addItemBtn">+ Add Item</button>
+    </div>
+
+    <!-- BOTTOM SECTION -->
+    <div class="bill-footer-section">
+      <div class="words-box">
+        <label>अक्षरी रुपये :</label>
+        <textarea id="amountWords" readonly></textarea>
+      </div>
+
+      <div class="totals-box">
+        <div class="total-line">
+          <label>एकूण रुपये :</label>
+          <input type="text" id="totalAmount" readonly />
+        </div>
+        <div class="total-line">
+          <label>मजुरी :</label>
+          <input type="text" id="totalLabour" readonly />
+        </div>
+        <div class="total-line payable">
+          <label>देणे रक्कम :</label>
+          <input type="text" id="payableAmount" readonly />
+        </div>
+      </div>
+    </div>
+
+    <div class="bill-script-footer">
+      <div class="thanks">Thanks for Visit Your Faithfull</div>
+      <div class="brand-repeat"><span class="g">बागवान</span> <span class="r">फ्रूट सप्लायर्स</span></div>
+    </div>
+
+    <span class="brand-credit">Design by Arsul Interpricess</span>
+  </div>
+
+  <!-- ACTIONS -->
+  <div class="bill-actions">
+    <button class="btn btn-primary" id="submitBtn">SUBMIT BILL</button>
+    <button class="btn btn-outline" id="saveImageBtn">SAVE IMAGE</button>
+  </div>
+
+  <div class="success-panel" id="successPanel">
+    <div class="success-text">✅ Bill Successfully Saved — Bill ID: <b id="savedBillId"></b></div>
+    <button class="btn btn-ghost" id="newBillBtn">+ नवीन बिल भरा</button>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<!-- Firebase (compat) and auth -->
+<!-- Firebase and auth disabled for local-only mode -->
+<script src="js/storage.js"></script>
+<script src="js/amountToWords.js"></script>
+<script src="js/billing.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

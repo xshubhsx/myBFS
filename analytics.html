@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Analytics — बागवान फ्रूट सप्लायर्स</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/history.css" />
+<link rel="stylesheet" href="css/analytics.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="analytics">
+<div class="app-shell">
+
+  <nav class="top-nav">
+    <a href="index.html" data-page="bill">🧾 नवीन बिल</a>
+    <a href="history.html" data-page="history">📜 Bill History</a>
+    <a href="analytics.html" data-page="analytics">📊 Analytics</a>
+  </nav>
+
+  <div class="card">
+    <h1 class="section-title" style="margin-top:0;">Analytics <span class="readonly-badge">Read-only</span></h1>
+    <div id="statGrid" class="stat-grid"></div>
+
+    <h2 class="section-title">महिना-निहाय विक्री</h2>
+    <div id="monthTable"></div>
+
+    <h2 class="section-title">माल-निहाय विक्री</h2>
+    <div id="productTable"></div>
+
+    <h2 class="section-title">ग्राहक-निहाय बिलिंग</h2>
+    <div id="customerTable"></div>
+
+    <h2 class="section-title">दिनांक-निहाय विक्री</h2>
+    <div id="dateTable"></div>
+  </div>
+</div>
+
+<!-- Firebase and auth disabled for local-only mode -->
+<script src="js/storage.js"></script>
+<script src="js/analytics.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

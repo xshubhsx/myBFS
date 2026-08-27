@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bill History — बागवान फ्रूट सप्लायर्स</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/bill.css" />
+<link rel="stylesheet" href="css/history.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="history">
+<div class="app-shell">
+
+  <nav class="top-nav">
+    <a href="index.html" data-page="bill">🧾 नवीन बिल</a>
+    <a href="history.html" data-page="history">📜 Bill History</a>
+    <a href="analytics.html" data-page="analytics">📊 Analytics</a>
+  </nav>
+
+  <div class="card">
+    <h1 class="section-title" style="margin-top:0;">Bill History</h1>
+    <input
+      type="text"
+      id="searchInput"
+      class="search-input"
+      placeholder="🔍 नाव, मोबाईल, Bill ID, गाव किंवा दिनांकाने शोधा..."
+    />
+    <div id="historyList" class="history-list"></div>
+  </div>
+</div>
+
+<div class="modal" id="detailsModal">
+  <div class="modal-card" id="detailsCard">
+    <button class="modal-close" id="closeModal">✕</button>
+    <div id="detailsContent"></div>
+    <div class="modal-actions">
+      <button class="btn btn-outline" id="saveDetailImageBtn">SAVE IMAGE</button>
+    </div>
+    <span class="brand-credit" style="position:static; display:block; text-align:right; margin-top:10px;">Design by Arsul Interpricess</span>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<!-- Firebase and auth disabled for local-only mode -->
+<script src="js/storage.js"></script>
+<script src="js/history.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
