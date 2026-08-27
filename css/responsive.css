@@ -1,0 +1,65 @@
+@media (max-width: 720px) {
+  body {
+    padding: 16px 8px 50px;
+  }
+
+  .bill-paper {
+    padding: 18px 14px 14px;
+    border-radius: 18px;
+  }
+
+  .bill-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .contact-block.right {
+    text-align: center;
+  }
+
+  .contact-block.right .phone {
+    justify-content: center;
+  }
+
+  .location-block {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .customer-box {
+    grid-template-columns: 1fr;
+  }
+
+  .date-row {
+    justify-content: center;
+  }
+
+  .bill-footer-section {
+    grid-template-columns: 1fr;
+  }
+
+  .total-line input {
+    width: 45vw;
+    max-width: 160px;
+  }
+
+  .bill-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .bill-actions .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .fruit-strip {
+    font-size: 22px;
+  }
+
+  .bill-table {
+    font-size: 12px;
+  }
+}

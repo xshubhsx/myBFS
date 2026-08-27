@@ -1,0 +1,70 @@
+.readonly-badge {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--forest);
+  background: #eaf6ec;
+  border: 1px solid var(--forest);
+  border-radius: 999px;
+  padding: 3px 10px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.stat-card {
+  background: #fbf9f2;
+  border: 1px solid var(--paper-edge);
+  border-radius: 14px;
+  padding: 16px 14px;
+  text-align: center;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--forest-dark);
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.mini-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  margin-bottom: 6px;
+}
+
+.mini-table th {
+  text-align: left;
+  background: #f1efe4;
+  padding: 8px 10px;
+  font-weight: 700;
+  color: var(--forest-dark);
+}
+
+.mini-table td {
+  padding: 8px 10px;
+  border-top: 1px solid var(--paper-edge);
+}
+
+.mini-table tr:hover td {
+  background: #fbf9f2;
+}
+
+@media (max-width: 600px) {
+  .stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
